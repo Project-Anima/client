@@ -1,0 +1,19 @@
+{
+  "name": "OptimaVM",
+  "version": "0.0.1",
+  "description": "Blockchain as an oracle",
+  "main": "index.js",
+  "authors": {
+    "name": "hankoc",
+    "email": "hankoc@onchainfactory.com"
+  },
+  "repository": "https://github.com/optimavm/OptimaVM",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}

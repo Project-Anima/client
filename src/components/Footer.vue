@@ -29,7 +29,7 @@
             <div class="column">
                 <div class="title-links"><p>Anima</p></div>
                 <a href="javascript:void(0);"><p>About</p></a>
-                <a href="javascript:void(0);"><p>Guide/FAQ</p></a>
+                <a href="https://63c44c14317d270008884a94--anima-guide.netlify.app/"><p>Guide/FAQ</p></a>
                 <a href="javascript:void(0);"><p>Press Inquiries</p></a>
                 <a href="javascript:void(0);"><p>Jobs</p></a>
             </div>

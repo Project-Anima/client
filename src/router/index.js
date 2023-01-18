@@ -23,9 +23,9 @@ const routes = [
     component: () => import('../views/Production/Artists')
   },
   {
-    path: '/invest',
-    name: 'Invest',
-    component: () => import('../views/Production/Invest')
+    path: '/investors',
+    name: 'Investors',
+    component: () => import('../views/Production/Investors')
   },
   {
     path: '/studios',

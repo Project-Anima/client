@@ -9,10 +9,20 @@
           </router-link>
       </div>
       <nav>
-        <div class="menu-item"><a href="/">Home</a></div>
-            <div class="menu-item"><a href="manga">Manga</a></div>
+        <div class="menu-item">
+                <router-link to="/">
+                    <p>Home</p>
+                </router-link>
+            </div>
             <div class="menu-item">
-                <router-link to="/manga"><p>Browse Manga</p></router-link>
+                <router-link to="/manga">
+                    <p>Manga</p>
+                </router-link>
+            </div>
+            <div class="menu-item">
+                <router-link to="/manga">
+                    <p>Anime</p>
+                </router-link>
             </div>
           <Dropdown title="Production" :items="actors" />
           <div class="menu-item"><a href="learn">Learn</a></div>
@@ -42,7 +52,7 @@ export default {
         },
         {
           title: 'Investors',
-          link: 'invest'
+          link: 'investors'
         }
       ]
         }

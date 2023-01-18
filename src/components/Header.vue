@@ -10,22 +10,27 @@
       </div>
       <nav>
         <div class="menu-item">
-                <router-link to="/">
-                    <p>Home</p>
-                </router-link>
-            </div>
-            <div class="menu-item">
-                <router-link to="/manga">
-                    <p>Manga</p>
-                </router-link>
-            </div>
-            <div class="menu-item">
-                <router-link to="/manga">
-                    <p>Anime</p>
-                </router-link>
-            </div>
-          <Dropdown title="Production" :items="actors" />
-          <div class="menu-item"><a href="learn">Learn</a></div>
+            <router-link to="/">
+                <p>Home</p>
+            </router-link>
+        </div>
+        <div class="menu-item">
+            <router-link to="/manga">
+                <p>Manga</p>
+            </router-link>
+        </div>
+        <div class="menu-item">
+            <router-link to="/anime">
+                <p>Anime</p>
+            </router-link>
+        </div>
+        <Dropdown title="Production" :items="actors" />
+
+        <div class="menu-item">
+            <router-link to="/learn">
+                <p>Learn</p>
+            </router-link>
+        </div>
 
       </nav>
   </div>

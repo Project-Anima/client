@@ -12,6 +12,7 @@
     "@amcharts/amcharts5": "^5.0.20",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
+    "vue-dropdowns": "^1.1.2",
     "vue-range-component": "^1.0.3",
     "vue-range-slider": "^0.6.0",
     "vue-router": "^4.0.0-0",

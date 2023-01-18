@@ -20,12 +20,17 @@ const routes = [
   {
     path: '/artists',
     name: 'Artists',
-    component: () => import('../views/Artists')
+    component: () => import('../views/Production/Artists')
   },
   {
     path: '/invest',
     name: 'Invest',
-    component: () => import('../views/Invest')
+    component: () => import('../views/Production/Invest')
+  },
+  {
+    path: '/studios',
+    name: 'Studios',
+    component: () => import('../views/Production/Studios')
   },
   {
     path: '/learn',

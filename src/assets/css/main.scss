@@ -19,37 +19,24 @@ body {
   background-color: #000000;
   display: flex;
   align-items: center;
-  .logo-wrapper {    
-    .logo {
-      padding: 0px 30px 0px 0px;
-      display: flex;
-      text-decoration: none;
-      img {
-        margin-right: 10px;
-        width: 4em;
-      }
-    }
-    .name {
-      font-size: 1.8vw;
-      font-weight: 400;
-      color: $colorWhite;
-      display: flex;
-      align-items: center;
-      text-decoration: none;
+  
+  .logo {
+    padding: 0px 30px 0px 0px;
+    display: flex;
+    text-decoration: none;
+    img {
+      margin-right: 10px;
+      width: 4em;
     }
   }
-  .nav {
-    a {
-      text-decoration: none;
-      margin-left: 1.65em;
-      color: $colorWhite;
-      font-size: $font-size-text;
-      &.router-link-active {
-        color: $colorOrange;
-        font-weight: 500;
-      }
-    }
 
+  .name {
+    font-size: 1.8vw;
+    font-weight: 400;
+    color: $colorWhite;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
   }
 
 }

@@ -8,29 +8,41 @@
               </div>
           </router-link>
       </div>
-      <div class="burger-menu" @click="toggleMenu()" :class="{ 'open' : menu}">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-      </div>
-      <div id="nav" class="nav">
-        <router-link to="/">Home</router-link>
-          <router-link to="/manga">Manga</router-link>
-          <router-link to="/anime">Anime</router-link>
-          <router-link to="/artists">Artists</router-link>
-          <router-link to="/invest">Invest</router-link>
-          <router-link to="/learn">Learn</router-link>
+      <nav>
+        <div class="menu-item"><a href="/">Home</a></div>
+            <div class="menu-item"><a href="manga">Manga</a></div>
+            <div class="menu-item"><a href="anime">Anime</a></div>
+          <Dropdown title="Production" :items="actors" />
+          <div class="menu-item"><a href="learn">Learn</a></div>
 
-      </div>
+      </nav>
   </div>
 </template>
 
 <script>
+import Dropdown from './Dropdown';
+
 export default {
     name: 'Header',
+    components: {
+        Dropdown
+    },
     data: function () {
         return {
-            menu: 0,
+            actors: [
+        {
+          title: 'Mangaka',
+          link: 'artists'
+        },
+        {
+          title: 'Animation Studios',
+          link:'studios'
+        },
+        {
+          title: 'Investors',
+          link: 'invest'
+        }
+      ]
         }
     },
     methods: {
@@ -41,6 +53,29 @@ export default {
 }
 </script>
 
-<style scoped>
 
+<style>
+    nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    nav .menu-item {
+    color: #FFF;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    display: flex;
+    transition: 0.4s;
+    }
+    nav .menu-item.active,
+    nav .menu-item:hover {
+        color: #F47521;
+    }
+    nav .menu-item a {
+    color: inherit;
+    text-decoration: none;
+    }
+    
 </style>

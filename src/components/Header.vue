@@ -11,7 +11,9 @@
       <nav>
         <div class="menu-item"><a href="/">Home</a></div>
             <div class="menu-item"><a href="manga">Manga</a></div>
-            <div class="menu-item"><a href="anime">Anime</a></div>
+            <div class="menu-item">
+                <router-link to="/manga"><p>Browse Manga</p></router-link>
+            </div>
           <Dropdown title="Production" :items="actors" />
           <div class="menu-item"><a href="learn">Learn</a></div>
 

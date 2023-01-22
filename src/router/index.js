@@ -13,6 +13,11 @@ const routes = [
     component: () => import('../views/Anime.vue')
   },
   {
+    path: '/login',
+    name: 'Login',
+    component: () => import('../views/Login.vue')
+  },
+  {
     path: '/manga',
     name: 'Manga',
     component: () => import('../views/Manga.vue')
@@ -32,11 +37,7 @@ const routes = [
     name: 'Studios',
     component: () => import('../views/Production/Studios')
   },
-  {
-    path: '/learn',
-    name: 'Learn',
-    component: () => import('../views/Learn')
-  }
+
 ]
 
 const router = createRouter({

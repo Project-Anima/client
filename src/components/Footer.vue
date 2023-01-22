@@ -16,9 +16,8 @@
                 <router-link to="/anime"><p>Browse Anime</p></router-link>
                 <router-link to="/artists"><p>Browse Artists</p></router-link>
                 <router-link to="/studios"><p>Browse Studios</p></router-link>
-                <router-link to="/invest"><p>Invest in Manga</p></router-link>
+                <router-link to="/investors"><p>Invest in Manga</p></router-link>
                 <router-link to="/learn"><p>Learn More</p></router-link>
-
             </div>
             <div class="column">
                 <div class="title-links"><p>Connect With Us</p></div>

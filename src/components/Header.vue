@@ -1,5 +1,7 @@
 <template>
   <div class="header">
+
+      <nav>
       <div class="logo-wrapper">
           <router-link class="logo" to="/">
               <img alt="Logo" src="../assets/images/logo.png">
@@ -8,12 +10,6 @@
               </div>
           </router-link>
       </div>
-      <nav>
-        <div class="menu-item">
-            <router-link to="/">
-                <p>Home</p>
-            </router-link>
-        </div>
         <div class="menu-item">
             <router-link to="/manga">
                 <p>Manga</p>
@@ -24,14 +20,7 @@
                 <p>Anime</p>
             </router-link>
         </div>
-        <Dropdown title="Production" :items="actors" />
-
-        <div class="menu-item">
-            <router-link to="/learn">
-                <p>Learn</p>
-            </router-link>
-        </div>
-
+        <Dropdown title="Learn" :items="actors" />
       </nav>
   </div>
 </template>
@@ -48,7 +37,7 @@ export default {
         return {
             actors: [
         {
-          title: 'Mangaka',
+          title: 'Artists',
           link: 'artists'
         },
         {

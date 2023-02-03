@@ -1,5 +1,4 @@
 <template>
-
     <div class="container">
       <form @submit.prevent="login">
         <h2 class="alternative-option">Login</h2>
@@ -42,7 +41,7 @@
         </div>
       </form>
     </div>
-  </template>
+</template>
   
   <script>
   // import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
